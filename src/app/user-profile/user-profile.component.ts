@@ -17,8 +17,7 @@ export class UserProfileComponent implements OnInit {
       userName: '',
       firstName: '',
       lastName: '',
-      email: '',
-      address: ''
+      email: ''
     })
   }
 
