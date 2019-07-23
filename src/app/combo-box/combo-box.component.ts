@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComboBoxComponent implements OnInit {
 
-  private defaultSelected = 0
+  private defaultSelected;
   private selection: number;
-  items = [0,1,2]
+  items = [
+    {id: 1, name: 'Male'},
+    {id: 2, name: 'Female'}
+  ]
 
   constructor() { }
 
