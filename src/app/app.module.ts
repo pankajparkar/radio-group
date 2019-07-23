@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatTabsModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatListModule } from '@angular/material';
+import { MatButtonModule, MatTabsModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatListModule, MatRadioModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +28,8 @@ import { ComboBoxComponent } from './combo-box/combo-box.component';
     MatToolbarModule,
     MatInputModule,
     MatFormFieldModule,
-    MatListModule
+    MatListModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

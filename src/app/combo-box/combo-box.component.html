@@ -1,1 +1,7 @@
-<p>combo-box works!</p>
+<mat-list role="list">
+	<mat-list-item role="listitem" *ngFor="let item of items; let i = index">
+		<mat-radio-button color="primary" [checked]="item == defaultSelected" [value]="item" (change)="selection = $event.value">
+			Item {{item}}
+		</mat-radio-button>
+	</mat-list-item>
+</mat-list>
