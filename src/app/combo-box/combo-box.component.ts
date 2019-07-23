@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'cb-combo-box',
@@ -9,10 +9,7 @@ export class ComboBoxComponent implements OnInit {
 
   private defaultSelected;
   private selection: number;
-  items = [
-    {id: 1, name: 'Male'},
-    {id: 2, name: 'Female'}
-  ]
+  @Input() items;
 
   constructor() { }
 

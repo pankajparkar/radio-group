@@ -10,7 +10,8 @@ export class UserProfileComponent implements OnInit {
 
   userProfile: FormGroup;
   gender = [
-    'Male', 'Female'
+    {id: 1, name: 'Male'},
+    {id: 2, name: 'Female'}
   ]
 
   constructor(private fb: FormBuilder) { }
