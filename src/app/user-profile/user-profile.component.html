@@ -16,6 +16,14 @@
         <input matInput type="text" formControlName="email" />
     </mat-form-field>
     <div>
+        <mat-label>Gender</mat-label>
+        <mat-selection-list>
+            <mat-list-option *ngFor="let g of gender">
+              {{g}}
+            </mat-list-option>
+        </mat-selection-list>
+    </div>
+    <div>
         <button mat-button color="primary" class="btn btn-primary">Update</button>
     </div>
 </form>

@@ -9,6 +9,9 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class UserProfileComponent implements OnInit {
 
   userProfile: FormGroup;
+  gender = [
+    'Male', 'Female'
+  ]
 
   constructor(private fb: FormBuilder) { }
 

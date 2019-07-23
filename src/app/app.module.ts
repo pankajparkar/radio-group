@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatTabsModule, MatToolbarModule, MatInputModule, MatFormFieldModule } from '@angular/material';
+import { MatButtonModule, MatTabsModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatListModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserAddressComponent } from './user-address/user-address.component';
+import { ComboBoxComponent } from './combo-box/combo-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
-    UserAddressComponent
+    UserAddressComponent,
+    ComboBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { UserAddressComponent } from './user-address/user-address.component';
     MatTabsModule,
     MatToolbarModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
