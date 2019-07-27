@@ -1,7 +1,7 @@
-<mat-list role="list">
-	<mat-list-item role="listitem" *ngFor="let item of items; let i = index">
-		<mat-radio-button color="primary" [checked]="item.id == defaultSelected" [value]="item.id" (change)="selection = $event.value.id">
-			{{item.name}}
-		</mat-radio-button>
-	</mat-list-item>
-</mat-list>
+<div>
+	<div *ngFor="let item of items">
+		<input type="radio" name="test" id="{{item.name}}" [ngModelOptions]="{standalone: true}" [value]="item.id" (ngModelChange)="select($event)" [(ngModel)]="selectedValue" required="true" />
+		<!-- <img src="" /> -->
+		<label for="{{item.name}}">{{item.name}}</label>
+	</div>
+</div>

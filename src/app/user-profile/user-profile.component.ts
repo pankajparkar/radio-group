@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'cb-user-profile',
@@ -21,7 +21,8 @@ export class UserProfileComponent implements OnInit {
       userName: '',
       firstName: '',
       lastName: '',
-      email: ''
+      email: '',
+      selectedValue: new FormControl(null, [Validators.required])
     })
   }
 

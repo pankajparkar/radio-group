@@ -7,13 +7,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ComboBoxComponent implements OnInit {
 
-  private defaultSelected;
-  private selection: number;
+  private selectedValue;
   @Input() items;
+  @Input() control;
 
   constructor() { }
 
+  select (value) {
+    this.control.setValue(value)
+  }
+
   ngOnInit() {
+    this.selectedValue = this.control.value;
+    this.control.valueChanges.subscribe(val => this.selectedValue = val);
   }
 
 }

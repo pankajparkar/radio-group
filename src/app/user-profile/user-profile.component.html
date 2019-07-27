@@ -17,9 +17,11 @@
     </mat-form-field>
     <div>
         <mat-label>Gender</mat-label>
-        <cb-combo-box [items]="gender"></cb-combo-box>
+        <input type="radio" #control formControlName="selectedValue" style="display: none;"/>
+        <cb-combo-box [items]="gender" [control]="userProfile.get('selectedValue')"></cb-combo-box>
     </div>
     <div>
         <button mat-button color="primary" class="btn btn-primary">Update</button>
     </div>
 </form>
+{{userProfile.valid}}
