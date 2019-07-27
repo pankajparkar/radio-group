@@ -17,10 +17,9 @@
     </mat-form-field>
     <div>
         <mat-label>Gender</mat-label>
-        <input type="radio" formControlName="selectedValue" style="display: none;"/>
         <cb-radio-group [items]="gender" [selectedValue]="userProfile.get('selectedValue')"></cb-radio-group>
     </div>
     <div>
-        <button mat-button color="primary" class="btn btn-primary">Update</button>
+        <button color="primary" mat-raised-button class="btn btn-primary">Update</button>
     </div>
 </form>

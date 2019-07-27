@@ -14,7 +14,8 @@ export class UserAddressComponent implements OnInit {
 
   ngOnInit() {
     this.userAddress = this.fb.group({
-      address: ''
+      address: '',
+      selectedValue: ''
     })
   }
 

@@ -4,6 +4,9 @@
         <textarea matInput formControlName="address"></textarea>
     </mat-form-field>
     <div>
+        <cb-radio-group [items]="gender" [selectedValue]="userAddress.get('selectedValue')"></cb-radio-group>
+    </div>
+    <div>
         <button mat-button color="primary">Update</button>
     </div>
 </form>
