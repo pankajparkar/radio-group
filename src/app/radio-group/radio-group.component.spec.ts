@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComboBoxComponent } from './combo-box.component';
+import { RadioGroupComponent } from './radio-group.component';
 
 describe('ComboBoxComponent', () => {
-  let component: ComboBoxComponent;
-  let fixture: ComponentFixture<ComboBoxComponent>;
+  let component: RadioGroupComponent;
+  let fixture: ComponentFixture<RadioGroupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ComboBoxComponent ]
+      declarations: [ RadioGroupComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComboBoxComponent);
+    fixture = TestBed.createComponent(RadioGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

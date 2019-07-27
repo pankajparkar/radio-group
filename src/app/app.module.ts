@@ -8,14 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserAddressComponent } from './user-address/user-address.component';
-import { ComboBoxComponent } from './combo-box/combo-box.component';
+import { RadioGroupComponent } from './radio-group/radio-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     UserAddressComponent,
-    ComboBoxComponent
+    RadioGroupComponent
   ],
   imports: [
     BrowserModule,
