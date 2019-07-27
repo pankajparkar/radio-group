@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'cb-combo-box',
@@ -7,19 +8,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ComboBoxComponent implements OnInit {
 
-  private selectedValue;
+  // private selectedValue;
   @Input() items;
-  @Input() control;
+  @Input() selectedValue = new FormControl();
 
   constructor() { }
 
   select (value) {
-    this.control.setValue(value)
+    // this.control.setValue(value)
   }
 
   ngOnInit() {
-    this.selectedValue = this.control.value;
-    this.control.valueChanges.subscribe(val => this.selectedValue = val);
+    // this.selectedValue = this.control.value;
+    // this.control.valueChanges.subscribe(val => this.selectedValue = val);
   }
 
 }
