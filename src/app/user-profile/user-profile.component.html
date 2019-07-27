@@ -18,10 +18,9 @@
     <div>
         <mat-label>Gender</mat-label>
         <input type="radio" formControlName="selectedValue" style="display: none;"/>
-        <cb-combo-box [items]="gender" [selectedValue]="userProfile.get('selectedValue')"></cb-combo-box>
+        <cb-radio-group [items]="gender" [selectedValue]="userProfile.get('selectedValue')"></cb-radio-group>
     </div>
     <div>
         <button mat-button color="primary" class="btn btn-primary">Update</button>
     </div>
 </form>
-{{userProfile.valid}}
