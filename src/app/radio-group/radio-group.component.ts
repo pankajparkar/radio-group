@@ -20,7 +20,8 @@ export class RadioGroupComponent implements OnInit, ControlValueAccessor {
 
   writeValue(value): void {
     if (value) {
-      this.onChange(value)
+      this.onChange(value);
+      this.selectedValue.setValue(value);
     }
   }
   registerOnChange(fn: any): void {
