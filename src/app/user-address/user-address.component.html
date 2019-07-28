@@ -1,11 +1,14 @@
 <form [formGroup]="userAddress">
+    {{userAddress?.invalid}}
+
+    <div>
+        <mat-label>Address Type</mat-label>
+        <cb-radio-group [items]="addressTypes" formControlName="selectedValue"></cb-radio-group>
+        </div>
     <mat-form-field>
         <mat-label>Address</mat-label>
         <textarea matInput formControlName="address"></textarea>
     </mat-form-field>
-    <div>
-        <cb-radio-group [items]="gender" [selectedValue]="userAddress.get('selectedValue')"></cb-radio-group>
-    </div>
     <div>
         <button mat-button color="primary">Update</button>
     </div>

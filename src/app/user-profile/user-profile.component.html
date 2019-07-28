@@ -1,4 +1,7 @@
 <form [formGroup]="userProfile">
+    <div *ngIf="userProfile.invalid">
+        Form is invalid
+    </div>
     <mat-form-field>
         <mat-label>Username</mat-label>
         <input matInput type="text" formControlName="userName" />
@@ -17,7 +20,7 @@
     </mat-form-field>
     <div>
         <mat-label>Gender</mat-label>
-        <cb-radio-group [items]="gender" [selectedValue]="userProfile.get('selectedValue')"></cb-radio-group>
+        <cb-radio-group [items]="gender" formControlName="selectedValue"></cb-radio-group>
     </div>
     <div>
         <button color="primary" mat-raised-button class="btn btn-primary">Update</button>

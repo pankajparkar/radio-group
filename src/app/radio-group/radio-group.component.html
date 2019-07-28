@@ -1,6 +1,6 @@
 <div>
 	<div *ngFor="let item of items">
-		<input type="radio" id="{{item.name}}" ngDefaultControl [value]="item.id" [formControl]="selectedValue" required="true" />
+		<input type="radio" (change)="select(item.id)" id="{{item.name}}" ngDefaultControl [value]="item.id" [formControl]="selectedValue" />
 		<!-- <img src="" /> -->
 		<label for="{{item.name}}">{{item.name}}</label>
 	</div>
