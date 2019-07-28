@@ -1,2 +1,2 @@
-# combo-box
-Combo box form control
+# Radio Group
+Radio Group form control
